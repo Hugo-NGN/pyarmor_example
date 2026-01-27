@@ -86,7 +86,7 @@ PYTHONPATH=./dist python main.py
 Pour distribuer votre application :
 
 1. **Copiez uniquement le contenu de `dist/`** vers votre environnement de production
-2. **Incluez le dossier `pyarmor_runtime_000000/`** (obligatoire)
+2. **Incluez le dossier `pyarmor_runtime_000000/`** (**obligatoire**)
 3. Votre script peut maintenant importer normalement :
 
 ```python
@@ -109,13 +109,11 @@ app_production/
 
 ## Points importants
 
-1. **Ne pas supprimer `pyarmor_runtime_000000/`** : Ce dossier contient le runtime nécessaire à l'exécution du code obfusqué
+1. **Ne pas supprimer `pyarmor_runtime_000000/`** : Ce dossier est nécessaire à l'exécution du code obfusqué
 
-2. **Garder le code source séparé** : Conservez votre code source original dans un endroit sécurisé, le code obfusqué n'est pas réversible
+2. **Garder le code source séparé** : Conservez votre code source original dans un endroit séparé/sécurisé, le code obfusqué n'est pas réversible.
 
-3. **Tester l'obfuscation** : Toujours tester le code obfusqué avant la distribution pour s'assurer qu'il fonctionne correctement
-
-4. **Licence PyArmor** : La version gratuite affiche "trial" dans les fichiers obfusqués. Pour un usage commercial, consultez les licences PyArmor
+3. **Tester l'obfuscation** : Vérifier que le code obfusqué fonctionne correctement avant la distribution
 
 ## Réobfuscation
 
@@ -135,7 +133,7 @@ pyarmor gen --recursive utils
 # Obfusquer un seul fichier
 pyarmor gen module.py
 
-# Obfusquer plusieurs dossiers
+# Obfusquer un ou plusieurs dossiers
 pyarmor gen --recursive utils models controllers
 
 # Spécifier un dossier de sortie personnalisé
