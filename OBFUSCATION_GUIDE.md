@@ -147,7 +147,3 @@ pyarmor gen --help
 
 - Documentation officielle : https://pyarmor.readthedocs.io/
 - GitHub : https://github.com/dashingsoft/pyarmor
-
----
-#### Auteur
-**Hugo NGUYEN**: hugo.nguyen@credit-agricole-sa.fr
